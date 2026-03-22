@@ -79,19 +79,22 @@ Compiled 2026-03-17. All numbers verified against source artifacts.
 |---|---|---|---|
 | Total commits | 335 | **327** | -8 |
 | Build period | 21 days | **~20 days** (Feb 24 - Mar 16) | -1 |
-| Production Python lines | 41.6K | **43,044** | +1.4K |
-| Total Python lines | — | **87,783** | — |
+| Production Python lines (soaria-backend) | 41.6K | **~42,000** | +0.4K |
+| Production TypeScript lines (versed_fe) | — | **~23,000** | — |
+| Production TypeScript lines (soaria-frontend, retired) | — | **~17,000** | — |
+| **Total production lines (all 3 codebases)** | — | **~82,000** | — |
+| Total Python lines (incl tests) | — | **87,783** | — |
 | Total lines inserted (cumulative) | 151K | **179,563** | +28K |
 | Numbered specs | 43 | **~40 unique** (34 in archive + spec-39 active) | -3 |
 
 **Notes:**
 - Commit count of 327 vs 335: could be branch differences or count taken at different point. Use 327.
 - Build period: first commit Feb 24, latest Mar 16. That's 20 calendar days. Use "~3 weeks" in prose, exact dates in evidence table.
-- Production Python 43K is close to 41.6K — difference likely in what's excluded. Use the verifiable 43K.
-- 179K total insertions includes reverts, refactors, etc. — not net new. Current codebase is 88K Python lines.
+- Three production codebases: soaria-backend (Python/FastAPI), versed_fe (React/TypeScript), soaria-frontend (React/TypeScript, retired after pivot). Total ~82K production lines.
+- 179K total insertions includes reverts, refactors, etc. — not net new.
 - Spec count: 40 unique numbered specs visible in archive. Some may have been renumbered or combined. Use "40+" not "43."
 
-**For the paper**: Use verified numbers only. "~327 commits across 20 days. 43K lines of production Python. 40+ numbered engineering specs."
+**For the paper**: Use verified numbers only. "~327 commits across 20 days. ~82,000 lines of production code (42K Python, 40K TypeScript) across three codebases. 40+ numbered engineering specs."
 
 ---
 
@@ -267,7 +270,7 @@ From `[memory-file]: insight-corrections-as-vocabulary-translation.md`:
 
 ### Cost Comparison
 
-- $2,116 total for 43K lines production Python across 20 days
+- $2,116 total for ~82K lines production code across 3 codebases over 20 days
 - Junior engineer @ $80K/yr = ~$4,384 for 20 days (salary only, no benefits/overhead)
 - Contractor @ $150/hr = ~$24,000 for 20 days
 - Lattice methodology: **~$100/day** including all spec writing, foil reviews, corrections, and builds
@@ -280,7 +283,7 @@ From `[memory-file]: insight-corrections-as-vocabulary-translation.md`:
 | API equivalent cost | $2,116.53 |
 | Savings vs API pricing | 88% |
 
-**For the paper**: Spencer ran the entire build on a $200/month Claude Max plan (20x usage). Hit session limits once on the 551M-token day (Mar 15) and paid ~$50 in overage. Total: ~$250 for 43K production Python, 40+ specs, 134 corrections, 306 rules, all foil reviews. API equivalent would have been $2,116. A junior engineer for 20 days costs ~$4,400 in salary alone. The cache read ratio (94.7%) shows the system efficiently reuses context. The cost curve shows acceleration — peak output days (Mar 12-15) correlate with peak spend but also peak rule accumulation.
+**For the paper**: Spencer ran the entire build on a $200/month Claude Max plan (20x usage). Hit session limits once on the 551M-token day (Mar 15) and paid ~$50 in overage. Total: ~$250 for ~82K lines production code across 3 codebases, 40+ specs, 134 corrections, 306 rules, all foil reviews. API equivalent would have been $2,116. A junior engineer for 20 days costs ~$4,400 in salary alone. The cache read ratio (94.7%) shows the system efficiently reuses context. The cost curve shows acceleration — peak output days (Mar 12-15) correlate with peak spend but also peak rule accumulation.
 
 ---
 
@@ -310,7 +313,7 @@ With verified numbers:
 | Rules | 150 | 306 | Use 306 (or ~250 correction-derived). |
 | Commits | 335 | 327 | Use 327. |
 | Days | 21 | 20 | Use "~3 weeks" or "20 days." |
-| Lines | 41.6K | 43K | Use 43K (production Python). |
+| Lines | 41.6K | ~82K (42K Python + 40K TS) | Use ~82K across 3 codebases. |
 | Specs | 43 | ~40 | Use "40+." |
 
 ---
@@ -323,7 +326,7 @@ With verified numbers:
 - [x] Document natural ablation (item 7) — DONE: Frannie→Faye seed failure documented
 - [x] Pull cost accounting (item 8) — DONE: $250 actual ($200 Max + $50 overage), $2,116 API equivalent
 - [x] Calculate correction rate trend over time (item 10) — DONE: 5.6→3.0→2.9 lessons/spec across 3 phases
-- [x] Build confusion matrix: DONE — 26 issue categories mapped, zero overlap confirmed
+- [x] Build confusion matrix: DONE — 24 issue categories mapped across all reviews (21 on shared FE spec set used in paper), zero overlap on domain-specific categories confirmed
 
 ## 11. Cross-Domain vs Same-Domain Confusion Matrix (VERIFIED)
 

@@ -2,7 +2,7 @@
 
 Public evidence repository for "The Behavioral Plane: Why Learned Corrections Don't Transfer Between Agents."
 
-This repo contains the raw artifacts from a 20-day solo build of a 43K-line production Python system using Claude Code with a structured correction methodology. Every empirical claim in the paper maps to one or more files below.
+This repo contains the raw artifacts from a 20-day solo build of an 82K-line production system (42K Python, 40K TypeScript) across three codebases using Claude Code with a structured correction methodology. Every empirical claim in the paper maps to one or more files below.
 
 ## Claim-to-Evidence Map
 
@@ -36,7 +36,7 @@ This repo contains the raw artifacts from a 20-day solo build of a 43K-line prod
 | Frontend foil found zero boundary issues on same specs | Same lesson entry + frontend-foil lessons | `corrections/frontend-foil/lessons.md` |
 | 17 per-spec correction files with exact field-level mismatches | Nolan's cross-domain review outputs | `review-evidence/per-spec-corrections/` |
 | Sloane found 7 systematic patterns (ARIA, mobile, brand) across all 10 FE specs | Cross-cutting review output | `review-evidence/per-spec-corrections/CROSS_CUTTING.md` |
-| Zero overlap between same-domain and cross-domain findings | 26-category confusion matrix | `review-evidence/cross-domain-matrix.md` |
+| Zero overlap between same-domain and cross-domain findings | 24-category confusion matrix (21 on shared FE spec set, 3 overlap) | `review-evidence/cross-domain-matrix.md` |
 
 ### Per-Spec vs Batch Review: Context compaction degrades quality
 
