@@ -1,4 +1,4 @@
-# Calx Research Program: Evidence Repository
+# Calx Labs Research Program: Evidence Repository
 
 Public evidence repository for three papers on knowledge transfer failure in human-AI collaboration.
 
