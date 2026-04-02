@@ -83,15 +83,6 @@ Supporting evidence for "Stickiness Without Resistance: Knowledge Transfer Failu
 | $450 total cost ($200/mo x 2 + $50 overage) | Subscription records | `extended-dataset/cost-breakdown.md` |
 | 4.12B tokens across both studies | Usage data | `extended-dataset/token-usage.md` |
 
-### Panel Review
-
-| Claim | Evidence | Files |
-|---|---|---|
-| 14-thinker panel, 2 rounds | 28 review files | `panels/` |
-| Round 1 reviews | 14 files | `panels/r1/` |
-| Round 2 reviews on revised draft | 13 files (Thaler dropped, framework cut) | `panels/r2/` |
-| Panel synthesis (R1 and R2) | Synthesis documents | `panels/synthesis-r1.md`, `panels/synthesis-r2.md` |
-
 ---
 
 ## Provenance

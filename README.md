@@ -1,4 +1,4 @@
-# Calx Labs Research Program: Evidence Repository
+# Calx Research Program: Evidence Repository
 
 Public evidence repository for three papers on knowledge transfer failure in human-AI collaboration.
 
@@ -28,9 +28,6 @@ evidence/
     classification/      (codebook with worked boundary examples)
     statistical/         (Fisher's exact test, contingency table)
     ecological/          (practitioner evidence audit, 70+ sources)
-    panels/              (28 reviews: 14 thinkers x 2 rounds)
-      r1/                (14 first-round reviews)
-      r2/                (13 second-round reviews)
     extended-dataset/    (Study 2 corrections, combined dataset)
     reconciliation/      (evidence reconciliation, verified numbers)
   paper-3/
@@ -48,7 +45,6 @@ Paper 1's evidence is in the parent repo (`getcalx/calx-paper-evidence`).
 | Classification codebook | `paper-2/classification/codebook.md` | Operational decision procedure for replication |
 | Fisher's exact test | `paper-2/statistical/fishers-exact-test.md` | p = 0.002 for the two-type split |
 | Practitioner evidence audit | `paper-2/ecological/practitioner-evidence-audit.md` | 70+ sources across 6 platforms |
-| Panel reviews (28 total) | `paper-2/panels/` | 14 thinkers, 2 rounds of review |
 | Evidence reconciliation | `paper-2/reconciliation/evidence-reconciliation-v2.md` | Every number verified with sources |
 
 ## What's Here vs What's Not
