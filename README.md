@@ -15,7 +15,7 @@ Public evidence repository for three papers on knowledge transfer failure in hum
 | Paper | Title | Status | Evidence |
 |---|---|---|---|
 | 1 | The Behavioral Plane: Why Learned Corrections Don't Transfer Between Agents | Published (Zenodo) | Parent repo root |
-| 2 | Stickiness Without Resistance: Knowledge Transfer Failure in Human-AI Collaboration Without Human Friction | Draft complete, panel-reviewed | `paper-2/` |
+| 2 | Stickiness Without Resistance: Knowledge Transfer Failure in Human-AI Collaboration Without Human Friction | Published (Zenodo) | `paper-2/` |
 | 3 | The Compiler Gap (working title) | Planned | `paper-3/` (stub) |
 
 ## Structure
